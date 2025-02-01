@@ -1,0 +1,90 @@
+class Definitions:
+    """
+    Definitions is an entity that...
+    TODO: documentation for Definitions.py
+    """
+
+    def __init__(self):
+        print(r'Definitions')
+
+    """
+    ENDPOINTS
+    """
+    UBER_FARES_ENDPOINT = "https://www.kaggle.com/datasets/yasserh/uber-fares-dataset"
+
+    """
+    PORTS
+    """
+    POSTGRESQL_PORT = 5432
+
+    """
+    REFERENCES
+    """
+    POSTGRESQL_NUMERIC_TYPES = "https://www.postgresql.org/docs/current/datatype-numeric.html"
+
+    """
+    POSTGRESQL FLOW CONTROL UNIT OPTIONS
+    """
+    PSQL_EXIT = -1
+    PSQL_CONNECT = 0
+    PSQL_CREATE = 1
+    PSQL_INSERT = 2
+    PSQL_SELECT = 3
+    PSQL_UPDATE = 4
+    PSQL_DELETE = 5
+    PSQL_ORDERBY = 6
+    PSQL_GROUPBY = 7
+    PSQL_INNER_JOIN = 8
+    PSQL_DUMP = 9
+
+    """
+    POSTGRESQL FLOW EXPERIMENTAL OPTIONS
+    """
+    PSQL_EXPERIMENTAL_CLEANUP = 10
+    PSQL_EXPERIMENTAL_JSON_MB_INSERT = 11
+    PSQL_EXPERIMENTAL_JSON_MB_DUMP = 12
+    PSQL_EXPERIMENTAL_JSON_MB_DELETE = 13
+    PSQL_EXPERIMENTAL_AUDIT_DBOPS = 14
+    PSQL_EXPERIMENTAL_AUDIT_JOINS = 15
+    PSQL_EXPERIMENTAL_DELETE_WITHOUT_WHERE = 16
+    PSQL_EXPERIMENTAL_DESTROY = 17
+
+    """
+    DATA OPTIONS FOR PANDAS
+    """
+    PANDA_VERTICAL_OPERATION = 0
+    PANDA_HORIZONTAL_OPERATION = 1
+
+    """
+    DATA OPTIONS FOR ML MODELS USER DETAILS
+    """
+
+    """ ModelMthValueUser """
+    USER_MIN_TOTAL_REVENUE = 0
+    USER_MAX_TOTAL_REVENUE = 1000
+    USER_MIN_PURCHASES = 1
+    USER_MAX_PURCHASES = 100
+    USER_MIN_TOTAL_PURCHASES = 1
+    USER_MAX_TOTAL_PURCHASES = 10
+    USER_MIN_NUM_UNIQUE = 1
+    USER_MAX_NUM_UNIQUE = 10
+    USER_MIN_SUM_LIFESPAN = 1
+    USER_MAX_SUM_LIFESPAN = 10
+    USER_MIN_NUM_OF_CUSTOMERS = 1
+    USER_MAX_NUM_OF_CUSTOMERS = 10
+    """ ModelNthUserChurn """
+    USER_MIN_LOST_DURING = 0
+    USER_MAX_LOST_DURING = 100
+    USER_MIN_AT_START = 0
+    USER_MAX_AT_START = 100
+    USER_MIN_PERCENT_OF_ALL = 0
+    USER_MAX_PERCENT_OF_ALL = 100
+
+    """
+    TIME ARGUMENTS
+    """
+    DF_SECONDS = 60     # @CONVERT TO SECONDS IN 1 MINUTE
+    DF_HOURS = 60       # @CONVERT TO MINUTES IN 1 HOUR
+    DF_DAY = 24         # @CONVERT TO HOURS IN 1 DAY
+    DF_MONTH = 30       # @CONVERT TO DAYS IN 1 MONTH
+    DF_YEAR = 52        # @CONVERT TO WEEKS IN 1 YEAR

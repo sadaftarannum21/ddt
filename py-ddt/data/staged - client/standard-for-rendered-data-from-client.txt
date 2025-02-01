@@ -1,0 +1,31 @@
+# this is a sample file synthesized from the client, the data is ready for eda analysis #
+synthesized_client = {
+    rider_id            : type(list of uuid),
+    rider_timestamp     : type(list of datetime),
+    nth_user_churn      : type(list of percentages),
+    mth_value_user      : type(list of users)
+}
+
+## example , ... means to continue the pattern ##
+synthesized_client = {
+    rider_id: type(list of uuid)
+        = [
+            f341938f-3a71-4d1c-be1d5-819b95460d5d,      #uc and hvu , available
+            2172f2de-423a-32f2-39c2-4511ecd24c2f,...    #uc and hvu , unavailable
+        ],
+    rider_timestamp: type(list of datetime)
+        = [
+            1012651109,
+            2324173109,...
+        ],
+    nth_user_churn: type(list of percentages)
+        = [
+            10%,
+            NULL,...
+        ],
+    mth_value_user: type(list of users)
+        = [
+            'uuid:f341938f-3a71-4d1c-be1d5-819b95460d5d',
+            NULL,...
+        ],
+}
