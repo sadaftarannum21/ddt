@@ -1,0 +1,5 @@
+# define the technology-stack #
+
+PY
+ -> Pandas  :   TODO: what is pandas used for?
+ -> NumPy   :   TODO: what is numpy used for?

@@ -1,0 +1,39 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@2.0.3
+  heroku: circleci/heroku@1.2.6
+
+jobs:
+  build_and_deploy:
+    build:
+      executor: python/default
+      steps:
+        - checkout # TODO: checkout -> correct it to the source code appropriately
+        - python/install-packages:
+            pkg-manager: pip
+        - run:
+            name: Python Configuration CI Script
+            command: python -m pytest # TODO: pytest -> correct it to the appropriate scripts
+        - persist_workspace:
+            root: ~/project # TODO: project -> correct it to the appropriate directory
+            paths:
+              - .
+
+  deploy:
+    executor: heroku/default
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - heroku/deploy-via-git:
+          force: true
+
+  workflow:
+    jobs:
+      - build_and_deploy
+      - deploy:
+          requires:
+            - build_and_deploy
+          filters:
+            branches:
+              only: main
