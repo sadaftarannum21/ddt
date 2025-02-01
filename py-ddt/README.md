@@ -1,0 +1,60 @@
+## PY-DDT
+
+###### DataFlow
+    - data
+        - artifact - rideshare-uber
+        - generated - rideshare-uber
+    - src
+        - ai
+        - analysis
+            - experiments
+                - performance
+                - reproduction
+        - data
+            - models
+                - feature
+                    - engineering
+                - platforms
+                    - datasource
+                        - mobile
+                        - scrape
+                        - statistics
+        - framework
+            - api
+                - dataworld
+                - google
+                    - cloud
+                - kaggle
+                - postgresql
+                - roboflow
+                - salesforce
+                    - heroku
+                - scikit
+                - tableau
+                - twilio
+                    - sendgrid
+            - infra
+                - core
+                    - di
+                        -logger
+                - tools
+                    - definitions
+    - stash
+        - analysis
+        - configs
+            - docker
+            - travis
+        - docs
+        - helpers
+            - curl
+        - notebooks
+        - scripts
+        - studies
+        - utils
+        - venv
+        - virtual
+            - se
+                - dl
+    - test
+        - performancetestsuite
+        - unittestsuite
